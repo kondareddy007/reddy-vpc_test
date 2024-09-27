@@ -5,6 +5,14 @@ terraform {
       version = "~> 5.0"  #aws provider version not terraform version
     }
   }
+ 
+   backend "s3" {
+    bucket = "reddy1229-remote"
+    key    = "vpc_test"
+    region = "us-east-1"
+    dynamodb_table = "reddy1229-locking"
+   } 
+
 }
 
 # Configure the AWS Provider
