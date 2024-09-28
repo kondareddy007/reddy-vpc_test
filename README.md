@@ -2,6 +2,11 @@
 
 ### AWS VPC Module
 
+* Code available locally below command we have to use.
+#source = "../reddy-terraform-aws-vpc"
+* Code is available in git we have to use below command. it will download the module code and run the "reddy-vpc-test" terraform.
+#source = "git::https://github.com/kondareddy007/reddy-terraform-aws-vpc.git?ref=master"
+
 This module creates following resources. We are using HA, we are getting first 2 AZ automatically.
 * VPC
 * Internet Gateway with VPC association
