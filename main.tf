@@ -1,6 +1,6 @@
 module "roboshop" {
-  source = "../reddy-terraform-aws-vpc"
-  #source = "git::https://github.com/kondareddy007/reddy-terraform-aws-vpc.git?ref?=master"
+  #source = "../reddy-terraform-aws-vpc"
+  source = "git::https://github.com/kondareddy007/reddy-terraform-aws-vpc.git?ref=master"
   project_name = var.project_name
   environment = var.environment
   common_tgs = var.common_tgs
